@@ -8,9 +8,12 @@ def main():
 
 def get_frequency():
     num = input("What is the frequency of the letter?")
-    while num.isdigit() != False:
+    while not num.isdigit() == False:
         print("Invalid, not digit")
+        num = input("What is the frequency of the letter?")
 
+    num = int(num)
+    return num
 
 
 def get_name():
