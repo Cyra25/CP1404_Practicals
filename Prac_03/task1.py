@@ -3,7 +3,6 @@ def main():
     for i in range(0,len(name),2):
         print(i)
 
-
 def get_name():
     name = input("your name?")
     while len(name) < 1:
