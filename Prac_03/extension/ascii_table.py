@@ -7,12 +7,12 @@ def main():
     number = get_number(lower, upper)
     while number < lower or number > upper:
         print("Number must be between 33 and 127")
-        number = input("Enter a number between 33 and 127: ")
+        number = get_number(lower,upper)
     new_chr = chr(number)
     print(new_chr)
 
     for i in range(33, 128):
-        ch = chr(i);
+        ch = chr(i)
         print("{:>4}".format(i),"{:>4}".format(ch))
 
 def get_number(lower, uppper):
