@@ -11,5 +11,5 @@ for n in range(len(string_list)):
 if repeat == []:
     print("No repeated strings")
 else:
-    repeat(dict.fromkeys(repeat))
+    repeat= list(dict.fromkeys(repeat))
     print("Repeated strings:", ', '.join(repeat))
