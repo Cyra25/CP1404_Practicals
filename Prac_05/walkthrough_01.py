@@ -19,4 +19,4 @@ while state != "":
 
 # for i in range(len(STATE_NAMES)):
 for key,value in STATE_NAMES.items():
-    print(key,value"{:>3}".format(i))
+    print("{}{:3s}".format(key,value))
